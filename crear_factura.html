@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Factura de Venta - Quality Bill Service</title>
+    <link rel="stylesheet" href="crear_factura.css">
+</head>
+<body>
+    <header class="header">
+        <img src="logo2.png" alt="logotipo" width="80" class="logo">
+        <h1 id="titulo">Quality Soft Service SAS</h1>
+        <button class="menu-btn">Menu</button>
+    </header>
+
+    <aside>
+        <h2>Menú</h2>
+        <ul>
+            <li><a href="#">Opción 1</a></li>
+            <li><a href="#">Opción 2</a></li>
+            <li><a href="#">Opción 3</a></li>
+            <li><a href="#">Opción 4</a></li>
+        </ul>
+    </aside>
+
+    <div class="factura-container">
+        <h2>Crear Factura de Venta</h2>
+        <form id="factura-form">
+            <div class="input-group">
+                <label for="cliente-nombre">Nombre del Cliente:</label>
+                <input type="text" id="cliente-nombre" required>
+            </div>
+            <div class="input-group">
+                <label for="cliente-nit">NIT del Cliente:</label>
+                <input type="text" id="cliente-nit" required>
+            </div>
+            <div class="input-group">
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" required>
+            </div>
+
+            <h3>Detalles de la Factura</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Quality Soft Service Sas</th>
+                        <th>Consecutivo No.2</th>
+                        <th>Consecutivo Electrónico No.2</th>
+                        <th>Consecutivo Electrónico de contingencia No.2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" placeholder="Desea copiar una factura existente? *" required></td>
+                        <td><input type="text" placeholder=" " required min="1"></td>
+                        <td><input type="text" placeholder=" " required step="0.01"></td>
+                        <td><input type="text" placeholder=" " required step="0.01" readonly></td>
+                        <td><input type="text" placeholder=" " required step="0.01" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Cliente*" required></td>
+                        <td><input type="text" placeholder=" " required min="1"></td>
+                        <td><input type="text" placeholder=" " required step="0.01"></td>
+                        <td><input type="text" placeholder=" " required step="0.01" readonly></td>
+                        <td><input type="text" placeholder=" " required step="0.01" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><input type="date" placeholder="Fecha *" required></td>
+                        <td><input type="text" placeholder=" " required min="1"></td>
+                        <td><input type="text" placeholder=" " required step="0.01"></td>
+                        <td><input type="text" placeholder=" " required step="0.01" readonly></td>
+                        <td><input type="text" placeholder=" " required step="0.01" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Tipo de Negociación *" required></td>
+                        <td><input type="text" placeholder=" " required min="1"></td>
+                        <td><input type="text" placeholder=" " required step="0.01"></td>
+                        <td><input type="text" placeholder=" " required step="0.01" readonly></td>
+                        <td><input type="text" placeholder=" " required step="0.01" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><input type="date" placeholder="Vencimiento *" required></td>
+                        <td><input type="text" placeholder=" " required min="1"></td>
+                        <td><input type="text" placeholder=" " required step="0.01"></td>
+                        <td><input type="text" placeholder=" " required step="0.01" readonly></td>
+                        <td><input type="text" placeholder=" " required step="0.01" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Acta *" required></td>
+                        <td><input type="text" placeholder=" " required min="1"></td>
+                        <td><input type="text" placeholder=" " required step="0.01"></td>
+                        <td><input type="text" placeholder=" " required step="0.01" readonly></td>
+                        <td><input type="text" placeholder=" " required step="0.01" readonly></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="submit">Generar Factura</button>
+        </form>
+    </div>
+</body>
+</html>
