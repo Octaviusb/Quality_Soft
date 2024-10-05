@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="factura.css">
+    <title>Generar Factura</title>
+    
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menú</h2>
+        <a href="#">Facturación</a>
+        <a href="#">Lista de Facturas</a>
+        <a href="#"><strong DEBITO - CREDITO></strong></a>
+        <a href="#">Notas Débito</a>
+        <a href="#">Notas Crédito</a>
+        <a href="#">COMPRAS</a>
+        <a href="#">Facturación</a>
+        <a href="#">Lista de Compras</a>
+        <a href="#">CONTRATOS</a>
+        <a href="#">ITEMS COMPRAS</a>
+        <a href="#">CLIENTES</a>
+        <a href="#">Lista de Clientes</a>
+        <a href="#">PROVEEDORES</a>
+        <a href="#">Lista de Proveedores</a>
+        <a href="#">CALENDARIO TRIBUTARIO</a>
+        <a href="#">Calendario Tributario</a>
+        <a href="#">MODULO ADMINISTRATIVO</a>
+        <a href="#">PRESUPUESTO</a>
+    </div>
+    <div class="main-content">
+        <div class="navbar">
+            <h2>Quality Soft Service SAS</h2>
+        </div>
+        <div class="form-container">
+            <form action="procesar_factura.php" method="post">
+                <div class="form-group">
+                    <label for="cliente">Cliente:</label>
+                    <input type="text" id="cliente" name="cliente" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div class="form-group">
+                    <label for="producto">Producto:</label>
+                    <input type="text" id="producto" name="producto" required>
+                </div>
+                <div class="form-group">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" required>
+                </div>
+                <div class="form-group">
+                    <label for="precio">Precio:</label>
+                    <input type="number" id="precio" name="precio" required>
+                </div>
+                <button type="submit">Generar Factura</button>
+            </form>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ejemplo Producto</td>
+                            <td>1</td>
+                            <td>$100</td>
+                            <td>$100</td>
+                        </tr>
+                        <!-- Más filas según sea necesario -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
