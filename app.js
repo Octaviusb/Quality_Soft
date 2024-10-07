@@ -13,4 +13,19 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     } else {
         
     }
+
+    function reenviarOTP() {
+        // Realizar la llamada a generar_Otp.php para reenviar el OTP
+        fetch('generar_Otp.php')
+        .then(response => {
+            if (response.ok) {
+                alert('El OTP ha sido reenviado a tu correo.');
+            } else {
+                alert('Hubo un problema al reenviar el OTP. Intenta nuevamente.');
+            }
+        })
+        .catch(error => {
+            console.error('Error al reenviar el OTP:', error);
+        });
+    }
 });

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';  // Asegúrate de importar Link
 import './Factura.css';
-import logo from './logo1.jpg'; 
+import logo from './logo3.jpg'; 
 
 const Factura = () => {
     // Declara el estado para los menús desplegables
@@ -12,9 +12,6 @@ const Factura = () => {
     return (
         <div style={{ display: 'flex', margin: 0 }}>
             <div className="sidebar">
-                <div className="logo-container">
-                    <img src={logo} alt="Logo de la empresa" className="logo" />
-                </div>
                 <h2>Menú</h2>
                 <a href="#">Facturación</a>
                 <a href="#">Lista de Facturas</a>

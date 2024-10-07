@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión - Quality Bill Service</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="login-container">
         <div class="login-box">
-            <img src="logo1.jpg" alt="Quality Bill Service" class="logo">
+            <img src="logo3.png" alt="Quality Bill Service" class="logo">
             <h2>Iniciar Sesión</h2>
             <form action="login.handler.php" method="POST" id="loginForm">
                 <div class="input-group">
@@ -22,6 +22,13 @@
                 <div class="forgot-password">
                     <a href="#">¿Olvidaste tu contraseña?</a>
                 </div>
+                
+                <!-- Sección OTP -->
+                <div class="input-group">
+                    <input type="text" id="otp" name="otp" placeholder="Código OTP" required>
+                    <button type="button" class="otp-btn" onclick="reenviarOTP()">Enviar OTP</button>
+                </div>
+
                 <button type="submit" class="login-btn">INGRESAR</button>
             </form>
             <div class="create-account">

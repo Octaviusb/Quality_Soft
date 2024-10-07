@@ -3,19 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <title>Quality Bill Service - Inicio</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <title>Página de Inicio - Quality Bill Service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="landing.css">
 </head>
 <body>
-    <div class="login-container">
-        <div class="login-box">
-            <img src="LOGO2.png" alt="Logo" class="logo">
-            <h2>Quality Bill Service</h2>
-            <h2>Bienvenido</h2>
-            <button class="btn-login" onclick="window.location.href='index1.html';">Iniciar Sesión</button>
-            </div>
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <img src="quality.png" alt="Quality Bill Service" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index1.html">Iniciar Sesión</a></li>
+                    <li><a href="crear_cuenta.html">Crear Cuenta</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
+
+    <!-- Sección Principal -->
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2>Bienvenido a </h2>
+                <h1>Quality Bill Service</h1>
+                <p>Optimiza la gestión de tus facturas con nuestra solución confiable.</p>
+                <a href="index1.html" class="cta-btn">Iniciar Sesión</a>
+            </div>
+            <div class="hero-image">
+                <img src="factura.png" alt="Gestión de Facturas" class="hero-img">
+            </div>
+        </section>
+
+        <!-- Banner Publicitario o Video -->
+        <section class="promo-section">
+            <div class="promo-content">
+                <h2>Conoce nuestras promociones exclusivas</h2>
+                <p>Descubre cómo podemos ayudarte a optimizar tu tiempo y recursos con nuestras ofertas.</p>
+                <!-- Video Promocional o Banner -->
+                <div class="promo-media">
+                    <video controls width="100%">
+                        <source src="promo-video.mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Quality Bill Service. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
