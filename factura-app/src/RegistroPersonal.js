@@ -103,6 +103,7 @@ const RegistroPersonal = () => {
                                     <td contentEditable="true" suppressContentEditableWarning={true}></td>
                                     <td>
                                         <button>Editar</button>
+                                        <button>Eliminar</button>
                                     </td>
                                     <td>
                                         <button>Generar</button>
@@ -119,8 +120,8 @@ const RegistroPersonal = () => {
 
                 {/* Botones de navegación */}
                 <div className="navigation-buttons">
-                    <button>Retornar</button>
-                    <button>Continuar</button>
+                    <button>Atrás</button>
+                    <button>Siguiente</button>
                 </div>
             </div>
         </div>

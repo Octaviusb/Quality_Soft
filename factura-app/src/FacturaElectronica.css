@@ -7,8 +7,8 @@ body {
 }
 
 .main-content {
-    flex: 1; /* Toma el espacio restante */
-    padding: 20px; /* Espacio alrededor del contenido principal */
+    flex: 1; 
+    padding: 20px; 
 }
 
 h1 {
@@ -21,53 +21,63 @@ h1 {
     justify-content: center;
     margin-bottom: 20px;
 }
-
-.botonera button {
-    margin: 0 10px;
+/* Botones generales */
+.buttons-container button {
     padding: 10px 20px;
-    background-color: #2c3e50;
-    color: white;
+    margin: 5px;
     border: none;
+    border-radius: 4px;
+    color: rgb(2, 7, 10);
     cursor: pointer;
     font-size: 14px;
-    border-radius: 4px;
 }
 
-.botonera button:hover {
-    background-color: #34495e;
+/* Colores específicos por categoría */
+.btn-copiar {
+    background-color: #2980b9; /* Azul */
 }
 
-/* Tabla */
-.tabla-container {
-    margin-left: 20px;
-    overflow-x: auto; 
+.btn-csv {
+    background-color: #27ae60; /* Verde */
 }
 
-.factura-electronica-table {
-    width: 100%;
-    border-collapse: collapse;
-    /* Remover margin-left para evitar desplazamientos innecesarios */
+.btn-excel {
+    background-color: #f39c12; /* Naranja */
 }
 
-.factura-electronica-table th, .factura-electronica-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+.btn-pdf {
+    background-color: #e74c3c; /* Rojo */
 }
 
-.factura-electronica-table th {
-    background-color: #f2f2f2;
-    font-weight: bold;
+.btn-print {
+    background-color: #8e44ad; /* Morado */
 }
 
-.factura-electronica-table td button {
-    padding: 5px 10px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    cursor: pointer;
+.btn-visibilidad {
+    background-color: #34495e; /* Azul oscuro */
 }
 
-.factura-electronica-table td button:hover {
-    background-color: #2980b9;
+/* Estilos de hover para los botones */
+.btn-copiar:hover {
+    background-color: #3498db; /* Azul más claro */
+}
+
+.btn-csv:hover {
+    background-color: #2ecc71; /* Verde más claro */
+}
+
+.btn-excel:hover {
+    background-color: #f1c40f; /* Naranja más claro */
+}
+
+.btn-pdf:hover {
+    background-color: #e74c3c; /* Rojo */
+}
+
+.btn-print:hover {
+    background-color: #9b59b6; /* Morado más claro */
+}
+
+.btn-visibilidad:hover {
+    background-color: #2c3e50; /* Azul oscuro más claro */
 }

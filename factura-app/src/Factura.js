@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';  // Asegúrate de importar Link
 import './Factura.css';
-import logo from './logo3.jpg'; 
+import logo from './logo1.jpg'; 
 
 const Factura = () => {
     // Declara el estado para los menús desplegables
